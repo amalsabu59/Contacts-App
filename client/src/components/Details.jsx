@@ -6,20 +6,19 @@ import { useParams } from "react-router-dom"
 import { Link } from 'react-router-dom';
 
 const Details = () => {
-  const  {id}  = useParams()
+  const { id } = useParams()
 
 
   const [details, setDetails] = useState([])
-
+//API CALL FOR GETTING A USER
   useEffect(() => {
-  async function fetchData() {
-    const req = await axios.get('/users/'+id)
+    async function fetchData() {
+      const req = await axios.get('/users/' + id)
 
-    setDetails(req.data);
-}
-fetchData();
-}, [])
-console.log(details)
+      setDetails(req.data);
+    }
+    fetchData();
+  }, [id])
   return (
     <>        <div className='containerDetails'>
       <div className='detailsWrapper'>
@@ -29,9 +28,9 @@ console.log(details)
         <div className='details'>
           <p className='nam'>{details.fname} {details.lname}</p>
           <p className='nam'>{details.mobile}</p>
-          <Link to={`/message/${details.mobile}`} style={{textDecoration:"none"}}>
-                 
-          <p><button>Send OTP</button></p>
+          <Link to={`/message/${details.mobile}`} style={{ textDecoration: "none" }}>
+
+            <p><button>Send OTP</button></p>
           </Link>
         </div>
 

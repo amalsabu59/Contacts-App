@@ -6929,6 +6929,11 @@
     "import-local" "^3.0.2"
     "jest-cli" "^26.6.0"
 
+"js-ago@^2.0.1":
+  "integrity" "sha512-J3IE0WOOS+SJR+pPe6LPNn4ioPZ39U2g0heg9d2PMFZ4sG3YI+yRtLyC6mvCy8ycL5AgwQ+lVkigScr1AzFA4A=="
+  "resolved" "https://registry.npmjs.org/js-ago/-/js-ago-2.0.1.tgz"
+  "version" "2.0.1"
+
 "js-tokens@^3.0.0 || ^4.0.0", "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
   "resolved" "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"

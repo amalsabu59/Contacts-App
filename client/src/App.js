@@ -4,7 +4,7 @@ import Timeline from './components/Timeline';
 import Navbar from './components/Navbar';
 
 import Details from './components/Details';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router,  Route } from "react-router-dom";
 
 function App() {
   return (
