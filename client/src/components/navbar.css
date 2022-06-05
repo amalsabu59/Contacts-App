@@ -1,0 +1,63 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(12, 161, 141);
+    
+    height: 65px;
+}
+
+nav .nav-menu {
+    color:  rgb(235, 198, 209);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+nav .nav-button:disabled {
+    background-color: rgb(181, 180, 180);
+    color: rgb(189, 42, 90);
+}
+
+
+nav .logo-container .logo {
+    color: rgb(235, 198, 209);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.navContacts {
+  margin-left: 400px;
+  
+}
+.navTimeline {
+margin-left: -775px;
+}
+
+@media screen and (max-width: 420px) {
+    nav{
+        width: 420px;
+    }
+
+    .navContacts {
+        margin-left: -380px;
+        
+      }
+
+    .navTimeline {
+        margin-left: -500px;
+        }
+}
+
+/* @media screen and (max-width: 920px) {
+
+    nav{
+        width: 920px;
+    }
+    .navContacts {
+        margin-left: -380px;
+        
+      }
+} */
